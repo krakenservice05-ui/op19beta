@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #0a0a0f;
+  --color-foreground: #ffffff;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Elite Games color palette */
+  --color-eg-black: #0a0a0f;
+  --color-eg-dark: #111118;
+  --color-eg-card: #16161e;
+  --color-eg-card-hover: #1c1c26;
+  --color-eg-border: #2a2a3a;
+  --color-eg-border-light: #353548;
+  --color-eg-text: #ffffff;
+  --color-eg-text-secondary: #9ca3af;
+  --color-eg-text-muted: #6b7280;
+  --color-eg-blue: #3b82f6;
+  --color-eg-blue-hover: #2563eb;
+  --color-eg-blue-light: #60a5fa;
+  --color-eg-purple: #8b5cf6;
+  --color-eg-purple-hover: #7c3aed;
+  --color-eg-purple-light: #a78bfa;
+  --color-eg-green: #10b981;
+  --color-eg-yellow: #f59e0b;
+  --color-eg-red: #ef4444;
+  --color-eg-promo: #1a1a2e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #ffffff;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111118;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a3a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #353548;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: #3b82f640;
+  color: #ffffff;
+}
+
+/* Line clamp utilities */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(10, 10, 15, 0.95) 0%,
+    rgba(10, 10, 15, 0.8) 40%,
+    rgba(10, 10, 15, 0.3) 70%,
+    rgba(10, 10, 15, 0.0) 100%
+  );
+}
+
+.hero-gradient-mobile {
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 15, 1) 0%,
+    rgba(10, 10, 15, 0.8) 50%,
+    rgba(10, 10, 15, 0.1) 100%
+  );
+}
+
+/* Card hover effects */
+.game-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Platform card gradient */
+.platform-card-xbox {
+  background: linear-gradient(135deg, #107c10 0%, #0a5a0a 100%);
+}
+.platform-card-playstation {
+  background: linear-gradient(135deg, #003087 0%, #001f5b 100%);
+}
+.platform-card-nintendo {
+  background: linear-gradient(135deg, #e4000f 0%, #9b0010 100%);
+}
+.platform-card-epic {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+.platform-card-steam {
+  background: linear-gradient(135deg, #1b2838 0%, #0f1824 100%);
+}
+.platform-card-ea {
+  background: linear-gradient(135deg, #ff4500 0%, #cc2900 100%);
+}
+.platform-card-rockstar {
+  background: linear-gradient(135deg, #fcb816 0%, #c8920a 100%);
+}
+.platform-card-pc {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f2040 100%);
+}
+
+/* Smooth image transitions */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* No-select for UI elements */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Animated underline for nav links */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3b82f6;
+  transition: width 0.2s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Promo bar gradient */
+.promo-bar {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+}
