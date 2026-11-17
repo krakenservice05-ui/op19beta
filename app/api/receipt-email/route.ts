@@ -313,7 +313,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   `.trim();
 
   // ── Send directly to the customer using the dedicated receipt account ───────
-  const fromAddress = `Elite Games <${process.env.RECEIPT_FROM_EMAIL}>`;
+  const fromAddress = `Elite Games <orders@elitechain.net>`;
 
   try {
     const { error } = await receiptResend.emails.send({
