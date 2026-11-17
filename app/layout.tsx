@@ -21,7 +21,9 @@ export const metadata: Metadata = {
     "Buy digital game codes, gift cards, and subscriptions for PlayStation, Xbox, PC, Steam, and more. Secure payments, instant delivery.",
   keywords: ["digital games", "game codes", "gift cards", "PlayStation", "Xbox", "Steam", "PC games"],
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
   },

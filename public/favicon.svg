@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rounded square: blue-to-purple gradient -->
+  <rect width="64" height="64" rx="13" fill="url(#bg)"/>
+  <!-- Subtle top shine -->
+  <rect width="64" height="32" rx="13" fill="url(#shine)" opacity="0.15"/>
+  <!-- Bold E letterform -->
+  <path d="M14 14h36v9H23v8h10v8H23v7H50v9H14V14z" fill="white"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
