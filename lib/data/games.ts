@@ -937,7 +937,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     title: "PAY WITH CRYPTO",
     subtitle: "SOLANA PAYMENTS",
     tagline: "Fast. Secure. Decentralised.",
-    heroImage: "/images/banners/Neon Solana Crypto Payment Banner.png",
+    heroImage: "/images/banners/neon-solana-banner.png",
     ctaText: "SHOP NOW",
     ctaLink: "/games",
     accentColor: "#9945FF",
