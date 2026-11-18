@@ -195,10 +195,12 @@ export function HeroCarousel({ slides }: HeroCarouselProps) {
             >
               <Link
                 href={slide.ctaLink}
-                className="inline-flex items-center justify-center gap-2 px-7 py-3 font-bold text-sm rounded-lg transition-all shadow-2xl no-select"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3 font-black text-sm rounded-lg transition-all shadow-2xl no-select active:scale-95 hover:brightness-110"
                 style={{
                   background: slide.accentColor ?? "#f59e0b",
-                  color: "#000",
+                  color: "#fff",
+                  boxShadow: `0 0 20px ${slide.accentColor ?? "#f59e0b"}99, 0 4px 15px rgba(0,0,0,0.4)`,
+                  letterSpacing: "0.08em",
                 }}
               >
                 {slide.ctaText}
