@@ -105,8 +105,7 @@ export function StatsCounter() {
 
         {/* Label */}
         <div className="flex items-center gap-3 self-start">
-          <div className="w-5 h-0.5 bg-white/40" aria-hidden="true" />
-          <p className="text-xs font-bold tracking-[0.25em] text-white/50 uppercase">
+          <p className="text-sm font-black text-white/70 uppercase tracking-[0.25em]">
             Items Sold
           </p>
         </div>

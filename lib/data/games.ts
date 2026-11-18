@@ -213,30 +213,30 @@ export const GAMES: Game[] = [
     isTrending: true,
     variants: [
       // PS5 — reference platform (adj 0%)
-      // orig=$71.00, disc=3%, final=$68.87
+      // orig=$59.99, disc=3%, final=$58.19
       {
         id: "gtavi-ps5-global-standard",
         platform: "PlayStation 5", region: "Global", edition: "Standard",
-        price: 68.87, originalPrice: 71.00, discount: 3,
+        price: r2(59.99 * 0.97), originalPrice: 59.99, discount: 3,
         deliveryType: "DIGITAL_CODE", availability: "IN_STOCK", inStock: true,
       },
       {
         id: "gtavi-ps5-europe-standard",
         platform: "PlayStation 5", region: "Europe", edition: "Standard",
-        price: 68.87, originalPrice: 71.00, discount: 3,
+        price: r2(59.99 * 0.97), originalPrice: 59.99, discount: 3,
         deliveryType: "DIGITAL_CODE", availability: "IN_STOCK", inStock: true,
       },
-      // Xbox — adj +2%: orig=$71.00×1.02=$72.42, final=$72.42×0.97=$70.25
+      // Xbox — adj +2%: orig=$59.99×1.02=$61.19, final=$61.19×0.97=$59.35
       {
         id: "gtavi-xbox-global-standard",
         platform: "Xbox Series X|S", region: "Global", edition: "Standard",
-        price: r2(r2(71.00 * 1.02) * 0.97), originalPrice: r2(71.00 * 1.02), discount: 3,
+        price: r2(r2(59.99 * 1.02) * 0.97), originalPrice: r2(59.99 * 1.02), discount: 3,
         deliveryType: "DIGITAL_CODE", availability: "IN_STOCK", inStock: true,
       },
       {
         id: "gtavi-xbox-europe-standard",
         platform: "Xbox Series X|S", region: "Europe", edition: "Standard",
-        price: r2(r2(71.00 * 1.02) * 0.97), originalPrice: r2(71.00 * 1.02), discount: 3,
+        price: r2(r2(59.99 * 1.02) * 0.97), originalPrice: r2(59.99 * 1.02), discount: 3,
         deliveryType: "DIGITAL_CODE", availability: "IN_STOCK", inStock: true,
       },
     ],
@@ -902,8 +902,8 @@ export const HERO_SLIDES: HeroSlide[] = [
     heroImage: "/images/banners/GTA-BANNER.png",
     ctaText: "BUY NOW",
     ctaLink: "/games/grand-theft-auto-vi",
-    accentColor: "#c026d3",
-    imagePosition: "center center",
+    accentColor: "#16a34a",
+    imagePosition: "center 15%",
     hideOverlayText: true,
   },
   {
