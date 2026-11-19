@@ -51,7 +51,7 @@ export function HeroCarousel({ slides }: HeroCarouselProps) {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#0a0a0f]"
+      className="relative w-full overflow-hidden bg-[#0a0a0f] cursor-pointer"
       style={{ height: "clamp(320px, 42vw, 540px)" }}
       aria-label="Featured games carousel"
       aria-roledescription="carousel"
@@ -66,6 +66,7 @@ export function HeroCarousel({ slides }: HeroCarouselProps) {
           )}
           aria-hidden={i !== current}
         >
+          <Link href={s.ctaLink} className="absolute inset-0 z-0" tabIndex={-1} aria-hidden="true" />
           {s.containImage ? (
             /* Small image — split layout: styled bg + image right + text left */
             <>
